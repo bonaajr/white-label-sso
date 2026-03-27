@@ -90,3 +90,65 @@ body {
   width: 21px;
   height: 21px;
 }
+
+.callback-page {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.callback-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 48px 44px;
+}
+
+.callback-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.callback-title--success {
+  color: #1b5e20;
+}
+
+.callback-title--error {
+  color: #b71c1c;
+}
+
+.callback-detail {
+  margin: 16px 0 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #333333;
+}
+
+.callback-detail--muted {
+  color: #666666;
+}
+
+.callback-back {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: #505050;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.callback-back:hover {
+  color: #222222;
+}
+
+.callback-back:focus-visible {
+  outline: 2px solid #505050;
+  outline-offset: 2px;
+}
