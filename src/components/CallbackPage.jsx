@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { loginRoutes } from '../authUrls'
 
 export function CallbackPage() {
   const [searchParams] = useSearchParams()
@@ -57,9 +58,14 @@ export function CallbackPage() {
             Sua sessão foi autorizada pelo provedor de identidade.
           </p>
         )}
-        <Link className="callback-back" to="/claro-colombia">
-          Voltar ao login
-        </Link>
+        <p className="callback-back-label">Voltar ao login</p>
+        <div className="callback-back-links">
+          {loginRoutes.map(({ path, label }) => (
+            <Link key={path} className="callback-back" to={path}>
+              {label}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )

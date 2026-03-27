@@ -135,9 +135,21 @@ body {
   color: #666666;
 }
 
+.callback-back-label {
+  margin: 28px 0 0;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.callback-back-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin-top: 8px;
+}
+
 .callback-back {
   display: inline-block;
-  margin-top: 28px;
   font-size: 0.95rem;
   color: #505050;
   text-decoration: underline;
